@@ -20,7 +20,7 @@ function initServerData(serverIp,serverPort){
     serverIpElement.innerHTML = serverIp;
 
     console.log('https://mcapi.us/server/status?ip='+serverIp+'&port='+serverPort);
-    fetch('https://mcapi.us/server/status?ip='+serverIp+'&port='+serverPort)
+    fetch('https://mcapi.us/server/status?ip='+serverIp+'&port='+serverPort) // Consumo de API 
     .then(response => response.json())
     .then(data => handleServerStatus(data));
 
@@ -42,7 +42,7 @@ function initServerData(serverIp,serverPort){
 
 }
 
-initServerData("us.mineplex.com","25565");
+initServerData("us.mineplex.com","25565"); // Aqui se introduce el nombre del servidor del que se requiera información y el puerto correspondiente
 
 </script>
 </body>
